@@ -1,0 +1,9 @@
+@charset "utf-8";
+@import url(header/header.css);
+@import url(container/index_container.css);
+@import url(footer/footer.css);
+#wrap{
+    width: 100%;
+    height: auto;
+    position: relative;
+}

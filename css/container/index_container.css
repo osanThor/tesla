@@ -1,0 +1,143 @@
+@charset "utf-8";
+@import url(../common/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+.container{
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container .inner-container{
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+    box-sizing: border-box;
+}
+.container .inner-container .sections{
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+    box-sizing: border-box;
+}
+.container .inner-container .sections .index{
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+    box-sizing: border-box;
+}
+.container .inner-container .sections .index .section{
+    width: 100vw;
+    height: 100vh;
+    border: 0px solid;
+    box-sizing: border-box;
+    position: relative;
+}
+.container .inner-container .sections .index .section:nth-child(1){
+    background: url(../../img/sec-con1.jpg) no-repeat 50% /cover;
+}
+.container .inner-container .sections .index .section:nth-child(2){
+    background: url(../../img/sec-con2.jpg) no-repeat 50% /cover;
+}
+.container .inner-container .sections .index .section:nth-child(3){
+    background: url(../../img/sec-con3.jpg) no-repeat 50% /cover;
+}
+.container .inner-container .sections .index .section:nth-child(4){
+    background: url(../../img/sec-con4.jpg) no-repeat 50% /cover;
+}
+.container .inner-container .sections .index .section:nth-child(5){
+    background: url(../../img/sec-con5.jpg) no-repeat 50% /cover;
+}
+.container .inner-container .sections .index .section .sec-title{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 17%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .inner-container .sections .index .section .sec-title>h1{
+    font-family: 'Lexend', sans-serif;
+    color: #393c41;
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: .128rem;
+}
+.container .inner-container .sections .index .section .sec-title:last-of-type>h1{
+    font-size: 2rem;
+}
+
+.container .inner-container .sections .index .section .sec-title>a,.container .inner-container .sections .index .section .sec-title>p{
+    font-size: 0.805rem;
+    color: #4a4d52;
+    position: relative;
+    margin-top: 8px;
+}
+.container .inner-container .sections .index .section  .sec-title a::after{
+    content: '';
+    /* display: block; */
+    position: absolute;
+    left: 0;
+    bottom:-5%;
+    width: 100%;
+    height: 1px;
+    background: #333;
+    transition: all .2s;
+}
+.container .inner-container .sections .index .section  .sec-title>a:hover::after{
+    height: 3px;
+}
+.container .inner-container .sections .index .section .bottom_boxs{
+    border: 0px solid;
+    box-sizing: border-box;
+    position: absolute;
+    bottom:10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 40px;
+    font-size: .75rem;
+}
+.container .inner-container .sections .index .section .bottom_boxs .order{
+    border: 0px solid;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 250px;
+    background: #171a20cb;
+
+}
+.container .inner-container .sections .index .section .bottom_boxs .order a{
+    display: block;
+    color: #fff;
+}
+
+.container .inner-container .sections .index .section .bottom_boxs .info{
+    border: 0px solid;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 250px;
+    background: #f5f5f5af;
+    margin-left: 28px;
+}
+.container .inner-container .sections .index .section .bottom_boxs .info a{
+    display: block;
+    color: #393c41;
+}
+.container .inner-container .sections .index .section:last-of-type .bottom_boxs{
+    bottom: 16%;
+}
+.container .inner-container .sections .index .section:last-of-type .bottom_boxs .info{
+    border: 0px solid;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 256px;
+    background: #171a20cb;
+    margin-left: 0;
+}
+.container .inner-container .sections .index .section:last-of-type .bottom_boxs a{
+    display: block;
+    color: #fff;
+}
